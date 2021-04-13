@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>cofeeHouse</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Mansalva&family=Montserrat:ital,wght@0,700;0,800;1,400&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script defer src="/javascript/index.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<!-- логотип cofeeHouse -->
+			<div class="logo">
+				<a href="#">
+					<img src="img/logo.png" alt="logo">
+				</a>
+			</div>
+			<!--menu-->
+			<nav>
+				<ul>
+					<li><a href="/" class="menu__link active">Home</a></li>
+					<li><a href="/menu" class="menu__link">Menu</a></li>
+					<li><a href="/orders" class="menu__link">Offers</a></li>
+					<li><a href="/about" class="menu__link">About</a></li>
+					<li><a href="/contact" class="menu__link">Contact us</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div clas="content">
+			<span class="content__enjoy">enjoy</span>
+			<span class="content__your">your</span>
+			<span class="content__coffee">Coffee</span>
+			<div class="content__back">
+				<img src="/img/coffeeBeans.png" alt="">
+			</div>
+			<!--button-->
+			<button class="button__buy">buy now</button>
+			<div class="content__mug">
+				<img src="img/сoffeeMug.png" alt="coffee mug">
+			</div>
+			<!--shape-->
+			<div class="content__shape">
+				<img src="/img/shape.png" alt="">
+				<span class="shape__text">Offer prise</span>
+				<span class="shape__price">$5.00</span>
+			</div>
+			<div class="content__right">
+				<ul class="right__list">
+					<li>Cappuccino</li>
+					<li>Espresso</li>
+					<li>Latte</li>
+				</ul>
+			</div>
+		</div>
+		<footer>
+			<div class="socials">
+				<ul>
+					<a href="#">
+						<li><img src="/img/socials/Instagram.png" alt="Instagram"></li>
+					</a>
+					<a href="#">
+						<li><img src="/img/socials/Facebook.png" alt="Facebook"></li>
+					</a>
+					<a href="#">
+						<li><img src="/img/socials/Twitter.png" alt="Twitter"></li>
+					</a>
+					<a href="#">
+						<li><img src="/img/socials/WhatsApp.png" alt="WhatsApp"></li>
+					</a>
+				</ul>
+			</div>
+			<div class="footer__text">Number one in Chisinau</div>
+			<div class="copyrights">Copyrights &copy; coffeeHouse all rights reserved</div>
+		</footer>
+	</div>
+	<!--dialog window-->
+	<div class="modal__overlay" id="modal-overlay"></div>
+	<div class="modal" role="dialog" aria-hidden="true">
+		<button class="close">x</button>
+		<div class="modal__guts" role="document">
+			<div class="title">Coffee order form</div>
+			<form class="contact__form" action="app.js" method="POST" name="contact__form">
+				<fieldset>
+					<div>
+						<label class="modal__label" for="espresso">Espresso</label>
+						<input type="checkbox" id="espresso" class="modal__checkbox">
+						<input type="number" name="espresso" class="modal__number" value="0" min="0">
+					</div>
+					<div>
+						<label class="modal__label" for="americano">Americano</label>
+						<input type="checkbox" id="americano" class="modal__checkbox">
+						<input type="number" name="americano" class="modal__number" value="0" min="0">
+					</div>
+					<div>
+						<label class="modal__label" for="cappuccino">Cappuccino</label>
+						<input type="checkbox" id="cappuccino" class="modal__checkbox">
+						<input type="number" name="cappuccino" class="modal__number" value="0" min="0">
+					</div>
+					<div>
+						<label class="modal__label" for="latte">Latte</label>
+						<input type="checkbox" id="latte" class="modal__checkbox">
+						<input type="number" name="latte" class="modal__number" value="0" min="0">
+					</div>
+					<div>
+						<label class="modal__label" for="lungo">Lungo</label>
+						<input type="checkbox" id="lungo" class="modal__checkbox">
+						<input type="number" name="lungo" class="modal__number" value="0" min="0">
+					</div>
+					<div>
+						<label class="modal__label" for="macchiato">Macchiato</label>
+						<input type="checkbox" id="macchiato" class="modal__checkbox">
+						<input type="number" name="macchiato" class="modal__number" value="0" min="0">
+					</div>
+				</fieldset>
+				<fieldset>
+					<div>
+						<label class="modal__label" for="userName">Name</label>
+						<input id="userName" type="text" class="modal__input" placeholder="Maria Rusu">
+					</div>
+					<div>
+						<label class="modal__label" for="phone">Phone</label>
+						<input id="phone" type="text" class="modal__input">
+						<span class="form__hint">Proper format: 060225544</span>
+					</div>
+				</fieldset>
+				<div class="modal__message"></div>
+				<div class="modal__footer">
+					<button id="submit" type="submit" class="modal__button">Submit</button>
+					<button type="reset" id="reset" class="modal__button">Reset</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
