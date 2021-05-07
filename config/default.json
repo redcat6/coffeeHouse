@@ -1,5 +1,5 @@
 {
 	"port": 5000,
 	"jwtSecret": "backend module 2",
-	"mongoUri": "mongodb+srv://admin:winner21@cluster0.nsn7e.mongodb.net/homeproject?retryWrites=true&w=majority"
+	"mongoUri": ""
 }
