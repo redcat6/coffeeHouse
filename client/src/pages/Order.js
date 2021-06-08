@@ -35,7 +35,7 @@ const Order = () => {
 			Authorization: `Bearer ${auth.token}`
 		});
 		setOrder({ ...order, 'order': newOrd.order });
-		message(`The ${key} was canceled`);
+		message(`The ${key} was cancelled`);
 	}
 	const editItem = async ({ coffee, num }) => {
 		if (num < 1) {
