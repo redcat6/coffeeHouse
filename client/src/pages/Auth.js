@@ -43,7 +43,7 @@ const Auth = () => {
 				<h1>CoffeeHouse</h1>
 				<div className="card blue-grey darken-1">
 					<div className="card-content white-text">
-						<span className="card-title">SignIn</span>
+						<span className="card-title">Sign In</span>
 						<div>
 							<div className="input-field">
 								<input id="email"
@@ -69,7 +69,7 @@ const Auth = () => {
 						<button className="btn yellow darken-1 btn-small offset-right"
 							onClick={loginHandler}
 							disabled={loading}
-						>SignIn
+						>Sign In
 						</button>
 						<button className="btn grey lighten-1 black-text btn-small"
 							onClick={registerHandler}
