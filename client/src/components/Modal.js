@@ -79,7 +79,7 @@ export const Modal = () => {
 		//send data
 		try {
 			await request('/adm/orders', 'POST', { userName, phone, order, suma });
-			message(`Your order is eccepted. Expected delivery time is 10 minutes. Total cost: ${suma} Lei.Thank you`);
+			message(`Your order is accepted. Expected delivery time is 10 minutes. Total cost: ${suma} Lei. Thank you`);
 		}
 		catch (err) {/*мы ошибки обрабатываем в hook*/ }
 	}
