@@ -35,6 +35,7 @@ export const Navbar = isAuthenticated => {
 					<ul id="nav-mobile" className="right hide-on-med-and-down">
 						<li><NavLink to="/">Home</NavLink></li>
 						<li><NavLink to="/menu">Menu</NavLink></li>
+						<li><NavLink to="/offers">Offers</NavLink></li>
 					</ul>
 				</div>
 			</nav>
